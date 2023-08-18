@@ -1,0 +1,9 @@
+[Unit]
+Description=checktec
+After=multi-user.target
+
+[Service]
+Type=simple
+Restart=always
+ExecStart=/opt/checktec/.venv/bin/python /opt/checktec/main.py
+WantedBy=multi-user.target
