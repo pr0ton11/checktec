@@ -7,3 +7,6 @@ Type=simple
 Restart=always
 ExecStart=/opt/checktec/.venv/bin/python /opt/checktec/main.py
 WantedBy=multi-user.target
+
+[Install]
+WantedBy=multi-user.target
